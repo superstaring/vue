@@ -5,6 +5,7 @@
     <router-link to="/Vue/Vuex">
       <button>Vuex</button>
     </router-link>
+    <router-link to="/Vue/Form"><button>Form</button></router-link>
     <TableHeader msg="父传子" />
     <p v-zhil:[direction]="200">人生不需要解释！</p>
     <TableList @handleClick="handleClick" v-bind:lists="lists" />
