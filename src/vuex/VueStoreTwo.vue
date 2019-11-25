@@ -14,20 +14,20 @@
 </template>
 
 <script>
-import { mapState, myGetters } from "Vuex";
-import store from "./Store";
+import { mapState, mapGetters } from "Vuex";
 
 export default {
   name: "VueStoreTwo",
-  // computed: {
-  //   // lists() {
-  //   //   return store.getters.doneTodos;
-  //   // },
-  //   ...mapState(["count"])
-  // }
-  computed: mapState({
-    count: state => state.count
-  })
+  computed: {
+    // lists() {
+    //   return store.getters.doneTodos;
+    // },
+    ...mapState(["count"]),
+    ...mapGetters(["doneTodos"])
+  }
+  // computed: mapState({
+  //   count: state => state.count
+  // })
 };
 </script>
 
