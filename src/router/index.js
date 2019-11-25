@@ -5,6 +5,7 @@ import TableListTotal from '@/components/TableListTotal'
 import TableRout from '@/components/TableRout'
 import StoreShow from '../store/StoreShow'
 import Form from '../form/Form'
+import VueStoreTwo from '../vuex/VueStoreTwo'
 
 Vue.use(Router)
 
@@ -29,10 +30,16 @@ export default new Router({
       path: '/Vue/Vuex',
       name: 'StoreShow',
       component: StoreShow
-    }, {
+    },
+    {
       path: '/Vue/Form',
       name: 'Form',
       component: Form
+    },
+    {
+      path: '/Vue/VuexTwo',
+      name: 'Vuex',
+      component: VueStoreTwo
     }
   ],
   mode: 'history' // 去掉路径的#
