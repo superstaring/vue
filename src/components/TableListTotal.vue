@@ -5,8 +5,14 @@
     <router-link to="/Vue/Vuex">
       <button>Vuex</button>
     </router-link>
+    <router-link to="/Vue/VuexOne">
+      <button>VuexOne</button>
+    </router-link>
     <router-link to="/Vue/VuexTwo">
       <button>VuexTwo</button>
+    </router-link>
+    <router-link to="/Vue/VuexThree">
+      <button>VuexThree</button>
     </router-link>
     <router-link to="/Vue/Form">
       <button>Form</button>

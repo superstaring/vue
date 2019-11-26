@@ -5,7 +5,9 @@ import TableListTotal from '@/components/TableListTotal'
 import TableRout from '@/components/TableRout'
 import StoreShow from '../store/StoreShow'
 import Form from '../form/Form'
+import VueStore from '../vuex/VueStore'
 import VueStoreTwo from '../vuex/VueStoreTwo'
+import VueStoreThree from '../vuex/VueStoreThree'
 
 Vue.use(Router)
 
@@ -37,9 +39,19 @@ export default new Router({
       component: Form
     },
     {
+      path: '/Vue/VuexOne',
+      name: 'VueStore',
+      component: VueStore
+    },
+    {
       path: '/Vue/VuexTwo',
       name: 'Vuex',
       component: VueStoreTwo
+    },
+    {
+      path: '/Vue/VuexThree',
+      name: 'VueStoreThree',
+      component: VueStoreThree
     }
   ],
   mode: 'history' // 去掉路径的#

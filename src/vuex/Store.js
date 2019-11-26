@@ -28,6 +28,11 @@ const store = new Vuex.Store({
     doneTodos: state => {
       return state.lists.filter(todo => todo.done)
     }
+  },
+  actions: {
+    increment3(context) {
+      context.commit('increment')
+    }
   }
 })
 
