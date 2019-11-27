@@ -6,7 +6,7 @@ Vue.use(Vuex)
 
 const ModuleA = {
   state: {
-    count: 1,
+    countA: 1,
     lists: [{
       id: '0',
       name: '张三a'
@@ -15,6 +15,7 @@ const ModuleA = {
       name: '李四a'
     }]
   }
+
 }
 const ModuleB = {
   state: {

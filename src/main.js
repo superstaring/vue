@@ -8,7 +8,8 @@ import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
 import axios from 'axios'
-import store from './vuex/Store'
+// import store from './vuex/Store'     // 普通的
+import store from './vuex/ModuleStore'
 
 Vue.config.productionTip = false
 
