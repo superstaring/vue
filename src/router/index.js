@@ -8,6 +8,7 @@ import Form from '../form/Form'
 import VueStore from '../vuex/VueStore'
 import VueStoreTwo from '../vuex/VueStoreTwo'
 import VueStoreThree from '../vuex/VueStoreThree'
+import KeepAlive from '../keep-alive/KeepAlive'
 
 Vue.use(Router)
 
@@ -37,6 +38,11 @@ export default new Router({
       path: '/Vue/Form',
       name: 'Form',
       component: Form
+    },
+    {
+      path: '/Vue/KeepAlive',
+      name: 'KeepAlive',
+      component: KeepAlive
     },
     {
       path: '/Vue/VuexOne',
