@@ -1,5 +1,3 @@
-
-
 <template>
   <div>
     <router-link to="/Vue/Vuex">
@@ -20,10 +18,13 @@
     <router-link to="/Vue/KeepAlive">
       <button>Keep-alive</button>
     </router-link>
+    <router-link to="/Vue/elementUI">
+      <button>element-ui</button>
+    </router-link>
     <TableHeader msg="父传子" />
     <p v-zhil:[direction]="200">人生不需要解释！</p>
     <TableList @handleClick="handleClick" v-bind:lists="lists" />
-    <p v-if="show">子传父：{{content}}</p>
+    <p v-if="show">子传父：{{ content }}</p>
     <Brother />
     <button @click="tableClick()">跳转TableRoute</button>
   </div>

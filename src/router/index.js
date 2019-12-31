@@ -9,6 +9,7 @@ import VueStore from '../vuex/VueStore'
 import VueStoreTwo from '../vuex/VueStoreTwo'
 import VueStoreThree from '../vuex/VueStoreThree'
 import KeepAlive from '../keep-alive/KeepAlive'
+import ElementUi from '../element-ui/ElementUi'
 
 Vue.use(Router)
 
@@ -58,6 +59,10 @@ export default new Router({
       path: '/Vue/VuexThree',
       name: 'VueStoreThree',
       component: VueStoreThree
+    }, {
+      path: '/Vue/elementUI',
+      name: 'ElementUi',
+      component: ElementUi,
     }
   ],
   mode: 'history' // 去掉路径的#
