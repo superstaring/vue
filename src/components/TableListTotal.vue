@@ -27,6 +27,9 @@
     <p v-if="show">子传父：{{ content }}</p>
     <Brother />
     <button @click="tableClick()">跳转TableRoute</button>
+    <p>计算属性computed: {{messageComputed}}</p>
+    <p>过滤器filter: {{message | mesFil}}</p>
+    <p>过滤器filter有参数: {{message | mesFil('$')}}</p>
   </div>
 </template>
 
@@ -40,7 +43,7 @@ export default {
   name: "TableListTotal",
   components: { TableList, TableHeader, Brother },
   data() {
-    return { show: false, lists: [], direction: "left" };
+    return { show: false, lists: [], direction: "left", message: "HELLO" };
   },
   methods: {
     handleClick(data) {
@@ -84,6 +87,18 @@ export default {
       }
     }
   },
-  filters: {}
+  filters: {
+    mesFil: function(message, val) {
+      return val ? message + val : message + "!";
+    }
+  },
+  computed: {
+    messageComputed: function() {
+      return this.message
+        .split("")
+        .reverse()
+        .join("");
+    }
+  }
 };
 </script>
